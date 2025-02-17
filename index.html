@@ -756,6 +756,10 @@
       data.push({
         name: 'DiaDiemDangKy',
         value: diadiem
+      });
+      data.push({
+        name: 'NgayGui',
+        value: new Date().toLocaleString("vi-Vi")
       })
       $.ajax({
         url: 'https://script.google.com/macros/s/AKfycbzvG5lZJlc4sb7fyCcKkMadWgdlpwAKFVL9-TESWh-7O9bfz6EVrQk2nPCKqCuz5aocyQ/exec',
