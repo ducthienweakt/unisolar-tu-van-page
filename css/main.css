@@ -52,6 +52,13 @@
   --contrast-color: #ffffff;
 }
 
+.primary-color{
+  color: var(--accent-color);
+}
+.secondary-color{
+  color: var(--heading-color);
+}
+
 /* Smooth scroll */
 :root {
   scroll-behavior: smooth;
@@ -162,6 +169,7 @@ h6 {
 .header .topbar .contact-info i {
   font-style: normal;
   color: var(--contrast-color);
+  font-weight: 600;
 }
 
 .header .topbar .contact-info i a,
@@ -940,6 +948,18 @@ section,
     text-align: center;
   }
 }
+@media (max-width: 440px) {
+  .banner-container .hero{
+    height: 236px;
+  }
+  .hero .btn-get-started{
+    top: 204px;
+    right: 10px;
+    padding: 2px 8px;
+    font-size: 10px;
+    text-align: center;
+  }
+}
 @media (max-width: 400px) {
   .banner-container .hero{
     height: 230px;
@@ -952,6 +972,7 @@ section,
     text-align: center;
   }
 }
+
 @media (max-width: 380px) {
   .banner-container .hero{
     height: 220px;
@@ -1430,6 +1451,7 @@ section,
   font-size: 28px;
   font-weight: 700;
   position: relative;
+  text-align: center;
 }
 
 /* .alt-services h3:after {
@@ -1491,20 +1513,23 @@ section,
 .alt-services .icon-box div{
   display: flex;
     align-items: center;
+    
 }
 
 .alt-services .client-logo{
   max-width: 200px;
     padding-bottom: 15px;
+    margin: 0 auto;
 }
 .alt-services  .high-light{
   font-weight: bold;
 }
 
 .alt-services  .logo-title{
-  display: flex;
+    display: flex;
       gap: 10px;
       padding-bottom: 8px;
+      justify-content: center;
 }
 
 .alt-services  .logo-title img{
@@ -1518,6 +1543,9 @@ section,
   }
   .alt-services .client-logo{
     margin: 0 auto;
+  }
+  .alt-services .big-title{
+    font-size: 32px;
   }
   .alt-services h3{
     font-size: 20px;
