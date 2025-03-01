@@ -868,8 +868,8 @@ section,
 }
 .hero .btn-get-started {
   position: absolute;
-  top: 310px;
-  left: 60%;
+  top: 512px;
+  left: 65%;
   color: var(--contrast-color);
   background: var(--heading-color);
   font-family: var(--heading-font);
@@ -889,12 +889,25 @@ section,
     max-width:1366px;
   }
 }
+@media (max-width: 1320px) {
+  .banner-container .hero{
+    height: 570px;
+  }
+  .hero .btn-get-started{
+    top: 478px;
+    left: 65%;
+  }
+}
 @media (max-width: 1200px) {
   .banner-container {
       max-width:1200px;
   }
   .banner-container .hero{
     background-image:  url(../images/banner-1200x600.png);
+    height: 510px;
+  }
+  .hero .btn-get-started{
+    top: 430px;
   }
 } 
 
@@ -904,6 +917,10 @@ section,
   }
   .banner-container .hero{
     background-image:  url(../images/banner-992x600.png);
+    height: 550px;
+  }
+  .hero .btn-get-started{
+    top: 480px;
   }
 } 
 @media (max-width: 768px) {
@@ -912,11 +929,12 @@ section,
   }
   .banner-container .hero{
     background-image:  url(../images/banner-768x500.png);
-    height: 500px;
+    height: 470px;
   }
   .hero .btn-get-started{
-    top: 220px;
-    left: 55%;
+    top: 405px;
+    font-size: 18px;
+    padding: 2px 13px;
   }
 }
 
@@ -929,10 +947,10 @@ section,
     height: 340px;
   }
   .hero .btn-get-started{
-    top: 160px;
-        left: 64%;
-        font-size: 14px;
-        padding: 2px 13px;
+    top: 292px;
+    left: 68%;
+    font-size: 14px;
+    padding: 2px 13px;
   }
 }
 
